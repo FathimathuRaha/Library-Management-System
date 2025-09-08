@@ -1,0 +1,166 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #4b79a1, #283e51);
+  min-height: 100vh;
+}
+
+/* Login Page */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 40px;
+  margin: auto;
+  width: 350px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.login-container h2 {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.login-container input:focus {
+  box-shadow: 0 0 5px #4b79a1;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #4b79a1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #283e51;
+}
+
+.error {
+  color: #ff6b6b;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Main App */
+.App {
+  text-align: center;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #058afea2;
+  background-image: linear-gradient(to right, #283e51, #4b79a1);
+  color: white;
+  padding: 20px 0;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-container button {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #ff4b5c;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.logout-container button:hover {
+  background-color: #c0392b;
+}
+
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.book-card {
+  background-color: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.book-card h3 {
+  margin-top: 0;
+  color: #4b79a1;
+}
+
+.book-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.book-card button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4b79a1;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.book-card button:hover {
+  background-color: #350208;
+}
+
+.alert {
+  margin: 20px auto;
+  padding: 15px 20px;
+  width: 50%;
+  border-radius: 5px;
+  font-weight: bold;
+  color: rgb(154, 163, 159);
+}
+
+.alert-success {
+  background-color: #28a745;
+}
+
+.alert-error {
+  background-color: #dc3545;
+}
